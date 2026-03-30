@@ -1,72 +1,39 @@
 import 'package:flutter/material.dart';
 
+// --- 表示したいレッスンをここでインポートします ---
+// import 'lessons/lesson_00_hello_world.dart'; // 第0回：StatelessWidget（Hello World）
+// import 'lessons/lesson_01_counter.dart';      // 第1回：StatefulWidget（カウンターアプリ）
+// import 'lessons/lesson_02_dialog.dart';       // 第2回：ダイアログとテキスト入力
+// import 'lessons/lesson_03_navigation.dart';   // 第3回：画面遷移（Navigation）
+// import 'lessons/lesson_04/lesson_04_app.dart';  // 第4回：ファイル分割
+// import 'lessons/lesson_05/lesson_05_app.dart';  // 第5回：アプリ全体でのデータ共有
+// import 'lessons/lesson_06/lesson_06_app.dart';  // 第6回：リスト表示（ListView）
+import 'lessons/lesson_07/lesson_07_app.dart'; // 第7回：API通信 + リスト表示
+
 void main() {
-  // アプリケーションのエントリーポイント（ここからアプリが始まります）
-  runApp(const MyApp());
-}
+  // ここで、表示したいレッスンのウィジェットを呼び出します。
 
-class MyApp extends StatefulWidget {
-  const MyApp({super.key});
+  // 第0回
+  // runApp(const Lesson00HelloWorldApp());
 
-  @override
-  State<MyApp> createState() => _MyAppState();
-}
+  // 第1回
+  // runApp(const Lesson01CounterApp());
 
-class _MyAppState extends State<MyApp> {
-  // ① 変化するデータ（状態）を保存する変数を定義します
-  int _counter = 0;
+  // 第2回
+  // runApp(const Lesson02DialogApp());
 
-  // ② ボタンが押されたときに呼ばれる関数
-  void _incrementCounter() {
-    // setState() を呼ぶことで、「データが変わったから画面を更新して！」とFlutterに伝えます
-    setState(() {
-      _counter++; // カウンターを1増やす
-    });
-  }
+  // 第3回
+  // runApp(const Lesson03NavigationApp());
 
-  @override
-  Widget build(BuildContext context) {
-    // MaterialAppはアプリ全体の土台となるウィジェットです
-    return MaterialApp(
-      title: 'Hello World App',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-        useMaterial3: true,
-      ),
-      // Scaffoldは画面の基本的な骨組み（ヘッダーやボディなど）を提供します
-      home: Scaffold(
-        // 画面上部のタイトルバー（AppBar）を追加
-        appBar: AppBar(
-          title: const Text('はじめてのFlutter'),
-          backgroundColor: Colors.blue, // タイトルバーの背景色を青に
-          foregroundColor: Colors.white, // 文字色を白に
-        ),
-        // 画面の中央に配置するウィジェット
-        body: Center(
-          // 縦に複数のウィジェットを並べるための「Column」に変更
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // 中央寄せ
-            children: [
-              const Text('ボタンを押した回数:', style: TextStyle(fontSize: 20)),
-              // ③ 変数 `_counter` の中身を画面に表示する
-              Text(
-                '$_counter',
-                style: const TextStyle(
-                  fontSize: 48,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.blue,
-                ),
-              ),
-            ],
-          ),
-        ),
-        // 画面の右下に浮かぶボタン（FloatingActionButton）を追加
-        floatingActionButton: FloatingActionButton(
-          // ④ ボタンが押されたら、上で作った `_incrementCounter` 関数を呼ぶ
-          onPressed: _incrementCounter,
-          child: const Icon(Icons.add), // 「+」マークのアイコンに変更
-        ),
-      ),
-    );
-  }
+  // 第4回
+  // runApp(const Lesson04App());
+
+  // 第5回
+  // runApp(const Lesson05App());
+
+  // 第6回
+  // runApp(const Lesson06App());
+
+  // 第7回
+  runApp(const Lesson07App());
 }
