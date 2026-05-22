@@ -1,5 +1,6 @@
 // 第4回：ファイル分割レッスンのメインウィジェット
 import 'package:flutter/material.dart';
+import 'package:flutter/widget_previews.dart';
 // main_screen.dart をインポート
 import 'main_screen.dart';
 
@@ -19,4 +20,9 @@ class Lesson04App extends StatelessWidget {
       home: const MainScreen(),
     );
   }
+}
+
+@Preview(name: 'Lesson 04 - ファイル分割')
+Widget lesson04Preview() {
+  return const Lesson04App();
 }

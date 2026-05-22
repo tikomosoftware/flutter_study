@@ -1,5 +1,6 @@
 // 第1回：カウンターアプリ（StatefulWidgetの基礎）
 import 'package:flutter/material.dart';
+import 'package:flutter/widget_previews.dart';
 
 // main関数は不要になるので削除（目次側のmainから直接 MyApp を呼び出します）
 
@@ -98,4 +99,9 @@ class _Lesson01CounterAppState extends State<Lesson01CounterApp> {
       ),
     );
   }
+}
+
+@Preview(name: 'Lesson 01 - カウンター')
+Widget lesson01CounterPreview() {
+  return const Lesson01CounterApp();
 }

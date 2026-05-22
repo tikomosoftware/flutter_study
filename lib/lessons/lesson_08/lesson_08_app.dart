@@ -1,10 +1,11 @@
-// 第7回：アプリの入り口
+// 第8回：アプリの入り口
+// レッスン7（httpパッケージ）を dio パッケージに書き換える練習です。
 import 'package:flutter/material.dart';
 import 'package:flutter/widget_previews.dart';
 import 'user_list_screen.dart';
 
-class Lesson07App extends StatelessWidget {
-  const Lesson07App({super.key});
+class Lesson08App extends StatelessWidget {
+  const Lesson08App({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +20,7 @@ class Lesson07App extends StatelessWidget {
   }
 }
 
-@Preview(name: 'Lesson 07 - API通信(http)')
-Widget lesson07Preview() {
-  return const Lesson07App();
+@Preview(name: 'Lesson 08 - API通信(dio)')
+Widget lesson08Preview() {
+  return const Lesson08App();
 }

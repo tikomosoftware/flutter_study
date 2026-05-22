@@ -1,5 +1,6 @@
 // 第5回：共有データレッスンのメインウィジェット
 import 'package:flutter/material.dart';
+import 'package:flutter/widget_previews.dart';
 import 'home_screen.dart';
 
 class Lesson05App extends StatelessWidget {
@@ -18,4 +19,9 @@ class Lesson05App extends StatelessWidget {
       home: HomeScreen(),
     );
   }
+}
+
+@Preview(name: 'Lesson 05 - データ共有')
+Widget lesson05Preview() {
+  return const Lesson05App();
 }

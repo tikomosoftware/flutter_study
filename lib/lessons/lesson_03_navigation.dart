@@ -1,5 +1,6 @@
 // 第3回：画面遷移（Navigation）の練習
 import 'package:flutter/material.dart';
+import 'package:flutter/widget_previews.dart';
 
 class Lesson03NavigationApp extends StatelessWidget {
   const Lesson03NavigationApp({super.key});
@@ -34,10 +35,7 @@ class FirstScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text(
-              'ここは【最初の画面】です。',
-              style: TextStyle(fontSize: 20),
-            ),
+            const Text('ここは【最初の画面】です。', style: TextStyle(fontSize: 20)),
             const SizedBox(height: 30),
             ElevatedButton(
               onPressed: () {
@@ -92,4 +90,9 @@ class SecondScreen extends StatelessWidget {
       ),
     );
   }
+}
+
+@Preview(name: 'Lesson 03 - Navigation')
+Widget lesson03NavigationPreview() {
+  return const Lesson03NavigationApp();
 }

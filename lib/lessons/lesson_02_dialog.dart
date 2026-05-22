@@ -1,5 +1,6 @@
 // 第2回：テキスト入力とダイアログ表示
 import 'package:flutter/material.dart';
+import 'package:flutter/widget_previews.dart';
 
 class Lesson02DialogApp extends StatefulWidget {
   const Lesson02DialogApp({super.key});
@@ -133,4 +134,9 @@ class _Lesson02DialogAppState extends State<Lesson02DialogApp> {
       ),
     );
   }
+}
+
+@Preview(name: 'Lesson 02 - ダイアログ')
+Widget lesson02DialogPreview() {
+  return const Lesson02DialogApp();
 }

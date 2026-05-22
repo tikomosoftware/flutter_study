@@ -50,13 +50,17 @@ flutter run -d windows
 
 | レッスン | テーマ | 解説資料 | ソースコード |
 | :--- | :--- | :--- | :--- |
-| **Lesson 0** | Hello World | [解説はこちら](LESSON_00_HELLO_WORLD.md) | [lesson_00_hello_world.dart](lib/lessons/lesson_00_hello_world.dart) |
-| **Lesson 1** | カウンター（状態管理） | [解説はこちら](LESSON_01_COUNTER.md) | [lesson_01_counter.dart](lib/lessons/lesson_01_counter.dart) |
-| **Lesson 2** | ダイアログとテキスト入力 | [解説はこちら](LESSON_02_DIALOG.md) | [lesson_02_dialog.dart](lib/lessons/lesson_02_dialog.dart) |
-| **Lesson 3** | 画面遷移（Navigation） | [解説はこちら](LESSON_03_NAVIGATION.md) | [lesson_03_navigation.dart](lib/lessons/lesson_03_navigation.dart) |
-| **Lesson 4** | ファイル分割 | [解説はこちら](LESSON_04_FILE_SPLITTING.md) | [lesson_04/](lib/lessons/lesson_04/) |
-| **Lesson 5** | データ共有（Provider） | [解説はこちら](LESSON_05_DATA_SHARING.md) | [lesson_05/](lib/lessons/lesson_05/) |
-| **Lesson 6** | リスト表示（ListView） | [解説はこちら](LESSON_06_LISTVIEW.md) | [lesson_06/](lib/lessons/lesson_06/) |
+| **Lesson 0** | Hello World | [解説はこちら](docs/lessons/LESSON_00_HELLO_WORLD.md) | [lesson_00_hello_world.dart](lib/lessons/lesson_00_hello_world.dart) |
+| **Lesson 1** | カウンター（状態管理） | [解説はこちら](docs/lessons/LESSON_01_COUNTER.md) | [lesson_01_counter.dart](lib/lessons/lesson_01_counter.dart) |
+| **Lesson 2** | ダイアログとテキスト入力 | [解説はこちら](docs/lessons/LESSON_02_DIALOG.md) | [lesson_02_dialog.dart](lib/lessons/lesson_02_dialog.dart) |
+| **Lesson 3** | 画面遷移（Navigation） | [解説はこちら](docs/lessons/LESSON_03_NAVIGATION.md) | [lesson_03_navigation.dart](lib/lessons/lesson_03_navigation.dart) |
+| **Lesson 4** | ファイル分割 | [解説はこちら](docs/lessons/LESSON_04_FILE_SPLITTING.md) | [lesson_04/](lib/lessons/lesson_04/) |
+| **Lesson 5** | データ共有（Provider） | [解説はこちら](docs/lessons/LESSON_05_DATA_SHARING.md) | [lesson_05/](lib/lessons/lesson_05/) |
+| **Lesson 6** | リスト表示（ListView） | [解説はこちら](docs/lessons/LESSON_06_LISTVIEW.md) | [lesson_06/](lib/lessons/lesson_06/) |
+| **Lesson 7** | API通信 + リスト表示（http） | [解説はこちら](docs/lessons/LESSON_07_API_HTTP.md) | [lesson_07/](lib/lessons/lesson_07/) |
+| **Lesson 8** | API通信（dioに書き換え） | [解説はこちら](docs/lessons/LESSON_08_API_DIO.md) | [lesson_08/](lib/lessons/lesson_08/) |
+| **Lesson 9** | 詳細画面への遷移（データ渡し） | [解説はこちら](docs/lessons/LESSON_09_DETAIL_SCREEN.md) | [lesson_09/](lib/lessons/lesson_09/) |
+| **Lesson 10** | テストの書き方 | [解説はこちら](docs/lessons/LESSON_10_TESTING.md) | [lesson_10/](lib/lessons/lesson_10/) + [test/](test/lessons/lesson_10/) |
 
 ## 🛠 その他の資料
 - [トラブルシューティング](TROUBLESHOOTING.md): エラーが出たときの対処法

@@ -1,5 +1,6 @@
 // 第6回：アプリの入り口
 import 'package:flutter/material.dart';
+import 'package:flutter/widget_previews.dart';
 import 'todo_list_screen.dart';
 
 class Lesson06App extends StatelessWidget {
@@ -17,4 +18,9 @@ class Lesson06App extends StatelessWidget {
       home: const TodoListScreen(),
     );
   }
+}
+
+@Preview(name: 'Lesson 06 - ListView')
+Widget lesson06Preview() {
+  return const Lesson06App();
 }
